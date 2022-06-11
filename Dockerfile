@@ -37,5 +37,4 @@ COPY --from=builder /usr/bin/php-cs-fixer /usr/bin/php-cs-fixer
 ENV WORKDIR /data
 WORKDIR /data
 
-ENTRYPOINT ["php-cs-fixer"]
-CMD ["--version"]
+CMD ["php-cs-fixer", "--version"]
